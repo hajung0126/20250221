@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.visual {
+    height: 500px;
+}
+.visual .visual_swiper {
+    height: 100%; /* 중간에 누가 값이 없으면 아래자식들은 상속 못받음 */
+}
+.visual .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}   
+.visual .swiper-slide .text {
+    width: 1280px;
+
+    position: absolute; /* 수직수평 가운데정렬 공식 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}

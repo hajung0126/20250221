@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드기본</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/01.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".visual_swiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: { /* 자동넘어가기만 하고싶을때 복사하는 스크립트 */
+                    delay: 3500, /* 2500=2.5초뒤에 넘어감 */
+                    disableOnInteraction: false, /* 드래그를 했을때 멈추게 할것인가? 안할래 */
+                },
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- swiper demos 검색 -->
+    <section class="visual">
+        <!-- Swiper -->
+        <div class="swiper visual_swiper"> <!-- mySwiper빼고 다 고정값 -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/일본1.jpg" alt="">
+                    <div class="text">
+                        <h2>visual slide</h2>
+                        <a href="#">바로가기</a>
+                    </div> <!-- text end -->
+                </div><!-- swiper slide end1 -->
+
+                <div class="swiper-slide">
+                    <img src="img/일본2.jpg" alt="">
+                    <div class="text">
+                        <h2>visual slide</h2>
+                        <a href="#">바로가기</a>
+                    </div> <!-- text end -->
+                </div><!-- swiper slide end2 -->
+
+                <div class="swiper-slide">
+                    <img src="img/일본3.jpg" alt="">
+                    <div class="text">
+                        <h2>visual slide</h2>
+                        <a href="#">바로가기</a>
+                    </div> <!-- text end -->
+                </div><!-- swiper slide end3 -->
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section> <!-- visual end -->
+</body>
+
+</html>
