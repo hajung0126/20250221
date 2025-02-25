@@ -3,65 +3,314 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>슬라이드기본</title>
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/01.css">
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        window.onload = () => {
-            var swiper = new Swiper(".visual_swiper", {
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                autoplay: { /* 자동넘어가기만 하고싶을때 복사하는 스크립트 */
-                    delay: 3500, /* 2500=2.5초뒤에 넘어감 */
-                    disableOnInteraction: false, /* 드래그를 했을때 멈추게 할것인가? 안할래 */
-                },
-            });
-        }
-    </script>
-
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>네스프레소</title>
+    <link rel="stylesheet" href="css/네스프레소웹페이지.css">
 </head>
 
 <body>
-    <!-- swiper demos 검색 -->
-    <section class="visual">
-        <!-- Swiper -->
-        <div class="swiper visual_swiper"> <!-- mySwiper빼고 다 고정값 -->
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="img/일본1.jpg" alt="">
-                    <div class="text">
-                        <h2>visual slide</h2>
-                        <a href="#">바로가기</a>
-                    </div> <!-- text end -->
-                </div><!-- swiper slide end1 -->
+    <header class="header">
+        <div class="inner">
 
-                <div class="swiper-slide">
-                    <img src="img/일본2.jpg" alt="">
-                    <div class="text">
-                        <h2>visual slide</h2>
-                        <a href="#">바로가기</a>
-                    </div> <!-- text end -->
-                </div><!-- swiper slide end2 -->
+            <h1 class="logo">
+                <a href="https://www.nespresso.com/kr/ko" target="_blank">
+                    <img src="img/네스프레소 로고1.png" alt="로고">
+                </a>
+            </h1>
 
-                <div class="swiper-slide">
-                    <img src="img/일본3.jpg" alt="">
-                    <div class="text">
-                        <h2>visual slide</h2>
-                        <a href="#">바로가기</a>
-                    </div> <!-- text end -->
-                </div><!-- swiper slide end3 -->
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="https://tinyurl.com/23wj2ah9" target="_blank">머신</a></li>
+                    <li><a href="https://tinyurl.com/2m3jmy38" target="_blank">캡슐</a></li>
+                    <li><a href="https://tinyurl.com/26t75qkv" target="_blank">악세사리</a></li>
+                    <li><a href="https://tinyurl.com/2ak3ytvu" target="_blank">클럽혜택</a></li>
+                    <li><a href="https://tinyurl.com/29ckymo4" target="_blank">재활용</a></li>
+                    <li><a href="#" target="_blank">고객서비스</a></li>
+                    <li><a href="#" target="_blank">프로페셔널(기업용)</a></li>
+                </ul>
+            </nav>
+
+            <ul class="util">
+                <li><a href="#">
+                        <img src="img/검색.png" alt="">
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/회원정보.png" alt="">
+                    </a></li>
+                <li><a href="#">
+                        <img src="img/장바구니.png" alt="">
+                    </a></li>
+            </ul>
+        </div><!-- inner end -->
+    </header> <!-- header end -->
+
+    <div class="main_wrap">
+
+    </div><!-- main_wrap end -->
+
+
+    <div class="main_visual">
+        <mian class="main">
+            <section class="main_visual">
+                <img src="img/메인비주얼 큰버전.jpg" alt="">
+                <div class="text">
+                    <h2>사라진 커피, <br>풀리지 않은 미스터리</h2>
+                    <p>그 누구도 대신할 수 없는 맛, 네스프레소 커피를 훔친 범인을 찾아라!</p>
+                    <a href="https://www.nespresso.com/kr/ko/2025-iconic-taste?pageNum=1" target="_blank">바로 보러가기</a>
+                </div>
+            </section>
+        </mian>
+    </div><!-- main_visual end -->
+
+
+    <div class="section section-01">
+        <div class="text">
+            <h2>온라인 마스터 클래스</h2>
+            <p>네스프레소의 커피 음유시인 "커피바드"와 함께하는 <br>유용한 학습영상으로 네스프레소 세계에 더 깊이 빠져보세요.</p>
+        </div><!-- text end -->
+
+
+        <div class="item_wrap">
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=Nr1SnPfkyTE" target="_blank">
+                    <img src="img/버츄오 웰컴기프트.png" alt="">
+                </a>
+                <div class="text">
+                    <span>버츄오 웰컴기프트 커피</span>
+                </div> <!-- text end -->
+            </div> <!-- item 1 end -->
+
+            <div class="item">
+                <a href="https://www.nespresso.com/kr/ko/nespresso-master-class-online" target="_blank">
+                    <img src="img/버츄오 모든것.png" alt="">
+                </a>
+                <div class="text">
+                    <span>버츄오 시스템의 모든 것</span>
+                </div> <!-- text end -->
+            </div> <!-- item 2 end -->
+
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=Jo9dRrB82pM" target="_blank">
+                    <img src="img/버츄오 불빛.png" alt="">
+                </a>
+                <div class="text">
+                    <span>버츄오 플러스 버튼 불빛 패턴 안내</span>
+                </div> <!-- text end -->
+            </div> <!-- item 3 end -->
+        </div> <!-- item_wrap end -->
+
+        <div class="button">
+            <a href="https://tinyurl.com/2dyycroe" target="_blank">더 알아보기</a>
+        </div><!-- button end -->
+
+    </div> <!-- section-01 end -->
+
+    <div class="section section-02">
+        <div class="item_wrap">
+
+            <div class="item">
+                <div class="text">
+                    <h1>캡슐커피</h1>
+                    <p>나에게 맞는 네스프레소 <br>커피를 찾아보세요.</p>
+                </div> <!-- text end -->
+
+                <a href="https://www.nespresso.com/kr/ko/coffee-selector" target="_blank">
+                    <div class="button">
+                        <p>내게 맞는 커피 찾기</p></a>
+                    </div><!-- button end -->
+                <img src="img/캡술이미지.png" alt="">
+            </div> <!-- item 1 end -->
+
+            <div class="item">
+                <div class="text">
+                    <h1>커피머신</h1>
+                    <p>원히는 키워드로 꼭 맞는 <br>머신을 찾아보세요.</p>
+                </div> <!-- text end -->
+
+                <a href="https://www.nespresso.com/kr/ko/coffee-machine-overview" target="_blank">
+                    <div class="button">
+                        <p>내게 맞는 머신 찾기</p> </a>
+                    </div><!-- button end -->
+                <img src="img/커피머신.png" alt="">
+            </div> <!-- item 2 end -->
+        </div><!-- item_wrap end -->
+    </div><!-- section-02 end -->
+
+    <div class="section section-03">
+        <div class="title">
+            <h2>새로운 네스프레소 소식</h2>
+        </div><!-- text end -->
+
+        <div class="item_wrap">
+            <div class="item">
+                <img src="img/이달의커피.png" alt="">
+
+                <div class="text">
+                    <h3>이달의 커피</h3>
+                    <span>오리지널 리치 초콜릿향 커피</span>
+                </div> <!-- text end -->
+
+                <div class="button">
+                    <a href="https://www.nespresso.com/kr/ko/2025-iconic-taste" target="_blank">지금 구매하기</a>
+                </div> <!-- button end -->
+            </div> <!-- item 1 end -->
+
+            <div class="item">
+                <img src="img/이달의레시피.png" alt="">
+
+                <div class="text">
+                    <h3>이달의 레시피</h3>
+                    <span>아르페지오 카푸치노</span>
+                </div> <!-- text end -->
+
+                <div class="button">
+                    <a href="https://www.nespresso.com/kr/ko/2025-iconic-taste" target="_blank">레시피 확인</a>
+                </div> <!-- button end -->
+            </div> <!-- item 2 end -->
+
+            <div class="item">
+                <img src="img/머신페이백.png" alt="">
+
+                <div class="text">
+                    <h3>이달의 소식</h3>
+                    <span>머신 페이백 특별할인</span>
+                </div> <!-- text end -->
+
+                <div class="button">
+                    <a href="https://tinyurl.com/29q8q5oq" target="_blank">지금 구매하기</a>
+                </div> <!-- button end -->
+            </div> <!-- item 3 end -->
+        </div> <!-- item_wrap end -->
+    </div> <!-- section-03 end -->
+
+    
+    <div class="section section-04">
+        <div class="item_wrap">
+            <div class="title">
+                <h2>네스프레소 X 최인아책방</h2>
+                <span>매달 최인아책방과 함께 커피에 어울리는 책을 골라 소개합니다. <br>
+                    커피 한 잔을 마시며 저자와 깊은 대화를 나누는 듯한 순간으로 초대할게요.</span>
+            </div><!-- text end -->
+
+            <div class="item">
+                <img src="img/책과커피.png" alt="">
+
+                <div class="text">
+                    <h3>이달의 커피와 책의 만남</h3>
+                    <p>잔잔한 여운의 로맨스「냉정과 열정 사이」와 함께,<br>
+                        초콜릿향 커피를 즐겨보세요.</p>
+                </div> <!-- text end -->
+
+                <div class="button">
+                    <a href="https://www.nespresso.com/kr/ko/monthly-coffee-and-book" target="_blank">자세히 보기</a>
+                </div> <!-- button end -->
+
+            </div> <!-- item 1 end -->
+        </div><!-- item_wrap end -->
+    </div><!-- section-04 end -->
+
+    <div class="section section-05">
+        <div class="item2_wrap">
+            <div class="item">
+                <div class="text">
+                    <h4>Made with Care</h4>
+                    <h2>지속 가능한 품질을 위한 노력</h2>
+                    <p>네스프레소 커피는 정성으로부터 시작됩니다. <br>
+                        농장에서 열린 커피 체리가 네스프레소 커피 한 잔이 되기까지 <br>
+                        모든 과정에서 말이죠. <br>
+                        다음 세대까지 잊을 수 없는 네스프레소의 커피 맛을 전하기 위해<br>
+                        오늘도 네스프레소만의 가치를 지켜나가고 있습니다. ​</p>
+                </div> <!-- text end -->
+            </div> <!-- item 1 end -->
+
+            <div class="item">
+                <a href="https://www.sustainability.nespresso.com/" target="_blank">
+                    <img src="img/자연순환.png" alt="네스프레소의 지속가능 보고서">
+                </a>
+            </div> <!-- item 2 end -->
+        </div><!-- item2_wrap end -->
+
+
+        <div class="item3_wrap">
+            <div class="item">
+                <a href="https://tinyurl.com/ytv95j6u" target="_blank">
+                    <img src="img/재생농업.png" alt="">
+                </a>
+
+                <div class="text">
+                    <p>자연과 어우러진 커피 재배</p>
+                </div> <!-- text end -->
+            </div> <!-- item 1 end -->
+
+            <div class="item">
+                <a href="https://www.nespresso.com/kr/ko/portioned-coffee" target="_blank">
+                    <img src="img/정교함의 미학.png" alt="">
+                </a>
+
+                <div class="text">
+                    <p>정교함의 미학</p>
+                </div> <!-- text end -->
+            </div> <!-- item 2 end -->
+
+            <div class="item">
+                <a href="https://www.nespresso.com/kr/ko/bcorp" target="_blank">
+                    <img src="img/비콥인증.png" alt="">
+                </a>
+
+                <div class="text">
+                    <p>비콥인증 기업</p>
+                </div> <!-- text end -->
+            </div> <!-- item 3 end -->
+        </div> <!-- item3_wrap end -->
+    </div><!-- section-05 end -->
+
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-social">
+                <a href="https://www.instagram.com/nespresso.kr/" target="_blank"><img src="img/인스타.png" alt="Instagram"
+                        target="_blank"></a>
+                <a href="https://www.youtube.com/user/nespresso" target="_blank"><img src="img/유튜브.png"
+                        alt="YouTube"></a>
+                <a href="https://x.com/nespresso" target="_blank"><img src="img/트위터.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/nespresso/" target="_blank"><img src="img/페이스북.png"
+                        alt="Facebook"></a>
+                <a href="https://kr.pinterest.com/nespresso/" target="_blank"><img src="img/핀터레스트.png"
+                        alt="Pinterest"></a>
 
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section> <!-- visual end -->
+
+            <div class="footer-left">
+                <div class="logo">
+                    <img src="img/네스프레소 로고2.png" alt="Nespresso Logo">
+                </div>
+                <p>
+                    ⓒ Nestlé Nespresso S.A. All rights reserved <br>
+                    <a href="https://www.nespresso.com/kr/ko/terms-and-condition" target="_blank">판매이용약관</a> |
+                    <a href="https://www.nespresso.com/kr/ko/privacy-policy" target="_blank">개인정보 처리 방침</a> |
+                    <a href="https://www.nespresso.com/kr/ko/cookies" target="_blank">쿠키</a> |
+                    <a href="https://www.nespresso.com/kr/ko/service-customer-care" target="_blank">고객지원</a>
+                </p>
+            </div>
+
+            <div class="footer-center">
+                <h3>네슬레코리아 유한책임회사</h3>
+                <p>대표번호 : 080-734-1111 <br>
+                    이메일 : club.korea@nespresso.com <br>
+                    주소 : 서울 서대문구 충정로70 (10, 12, 16층)</p>
+            </div>
+
+            <div class="footer-right">
+                <p>대표자 : 토마스제프리카소<br>
+                    사업자등록번호 : 110-86-10100 <br>
+                    통신판매업신고 : 2014-서울서대문-0247</p>
+            </div>
+        </div> <!-- footer-container end -->
+    </footer> <!-- footer end -->
+
 </body>
 
 </html>
